@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Stock Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>My Stock Portfolio</h1>
+
+  <!-- Dark Mode Switch -->
+  <div id="dark-mode-container">
+    <label for="dark-mode-switch" id="dark-mode-label">Light Mode</label>
+    <label class="switch">
+      <input id="dark-mode-switch" type="checkbox">
+      <span class="slider round"></span>
+    </label>
+    <label for="dark-mode-switch" id="light-mode-label">Dark Mode</label>
+  </div>
+  
+
+  <!-- Stock Search Form -->
+  <form id="stock-search-form">
+    <input type="text" id="stock-symbol" placeholder="Enter Stock Symbol" required>
+    <button type="submit">Search</button>
+  </form>
+
+  <!-- Search Results -->
+  <div id="search-results"></div>
+
+  <!-- Add to Portfolio Form -->
+  <form id="add-to-portfolio-form">
+    <h2>Add to Portfolio</h2>
+    <input type="text" id="portfolio-stock-symbol" placeholder="Stock Symbol" required>
+    <input type="number" id="portfolio-quantity" placeholder="Quantity" required>
+    <input type="number" id="purchase-price" placeholder="Purchase Price" required>
+    <button type="submit">Add</button>
+  </form>
+
+<!-- Portfolio Table -->
+<h2>Portfolio</h2>
+<table id="portfolio-table">
+  <thead id="portfolio-header" class="hidden">
+    <tr>
+      <th>Stock Symbol</th>
+      <th>Quantity</th>
+      <th>Purchase Price</th>
+      <th>Current Price</th>
+      <th>Profit/Loss</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody id="portfolio-rows"></tbody>
+</table>
+
+  <!-- Portfolio Value -->
+  <p>Total Portfolio Value: $<span id="portfolio-value">0.00</span></p>
+
+  <script src="script.js"></script>
+</body>
+</html>

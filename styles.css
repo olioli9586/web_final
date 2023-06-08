@@ -1,0 +1,178 @@
+/* Main styles */
+body {
+    position: relative;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #dark-mode-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    padding: 5px;
+    margin-right: 10px;
+  }
+  
+  button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  th,
+  td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  #portfolio-header.hidden {
+    display: none;
+  }
+  
+  #portfolio-value {
+    font-weight: bold;
+  }
+  
+  .profit-loss {
+    font-weight: bold;
+  }
+  
+  .remove-btn {
+    background-color: #f44336;
+  }
+  
+  .remove-btn:hover {
+    background-color: #d32f2f;
+  }
+  
+ /* Search results */
+#search-results {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  body.dark-mode #search-results {
+    background-color: #444;
+    color: #fff;
+  }
+  
+/* Custom styling for the table rows */
+#portfolio-rows tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  body.dark-mode #portfolio-rows tr:nth-child(even) {
+    background-color: #444;
+  }
+  
+
+  /* Dark mode styles */
+  body.dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: #fff;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  /* Dark mode switch labels */
+#dark-mode-label,
+#light-mode-label {
+  margin-right: 5px;
+  color: #888;
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#dark-mode-label {
+  text-align: right;
+  flex: 1;
+}
+
+#light-mode-label {
+  text-align: left;
+}

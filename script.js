@@ -90,7 +90,7 @@ function calculatePortfolioValue() {
   
   // Function to search for stocks
   function searchStock(stockSymbol) {
-    const apiKey = 'YOUR_API_KEY'; // Replace with your Alpha Vantage API key
+    const apiKey = 'A0GXKO69N5ZTLGNK'; // Replace with your Alpha Vantage API key
     const url = `https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${stockSymbol}&apikey=${apiKey}`;
   
     // Make AJAX request to fetch stock data from Alpha Vantage API
